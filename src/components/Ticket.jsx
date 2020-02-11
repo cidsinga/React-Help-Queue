@@ -3,18 +3,12 @@ import PropTypes from "prop-types";
 
 
 function Ticket(props){
-  var ticketStyles = {
-   backgroundColor: '#ecf0f1',
-   fontFamily: 'sans-serif',
-   paddingTop: '50px'
- }
   return (
-    <div style= {ticketStyles}>
+    <div>
           <h3>{props.location} - {props.names}</h3>
           <p><em>{props.issue}</em></p>
           <hr/>
         </div>
-
 
   );
 }
