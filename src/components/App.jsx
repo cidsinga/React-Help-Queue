@@ -3,6 +3,8 @@ import './App.css'
 import Header from "./Header";
 import TicketList from "./TicketList"
 import Footer from "./Footer"
+import { Switch, Route } from 'react-router-dom';
+import NewTicketForm from './NewTicketForm';
 
 
 function App(){
@@ -17,7 +19,10 @@ function App(){
   return (
     <div style={allStyle}>
       <Header/>
-      <TicketList/>
+      <Switch>
+     <Route exact path='/' component={TicketList} />
+     <Route path='/newticket' component={NewTicketForm} />
+   </Switch>
       <Footer/>
     </div>
   );
