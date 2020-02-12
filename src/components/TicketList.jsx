@@ -15,14 +15,18 @@ var masterTicketList = [
   {
     names: 'Imani & Jacob',
     location: '9F',
-    issue: 'Donkey picture not displaying on hover in Zoology app. :('
+    issue: 'Donkey picture not displaying'
   },
 ]
 
 
 function TicketList(){
+  var listStyle = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr 1fr',
+  }
   return (
-      <div>
+      <div style={listStyle}>
 
         {masterTicketList.map((ticket, index) =>
           <Ticket names={ticket.names}

@@ -10,14 +10,15 @@ function App(){
     backgroundColor: '#13B7FF',
     fontFamily: "'Nosifer', cursive",
     color: '#BD0000',
-    textAlign: 'center'
+    textAlign: 'left',
+    margin: '-8px',
+    textShadow: '5px 3px 5px black'
  }
   return (
     <div style={allStyle}>
       <Header/>
       <TicketList/>
       <Footer/>
-
     </div>
   );
 }
